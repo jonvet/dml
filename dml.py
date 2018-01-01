@@ -153,13 +153,6 @@ def plot_distributions(thetas):
     plt.xlim(0.2, 0.8)
     plt.show()
 
-# N = 1000 # number of observations
-# D = 60 # number of dimensions
-# M = 100 # number of experiments
-# betaparameter = 1.0
-# max_leaf_nodes_y = 24
-# max_leaf_nodes_d = 27
-# max_leaf_nodes = 27
 theta=0.5
 
 plt.close()
