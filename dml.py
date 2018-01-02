@@ -12,6 +12,9 @@ import pickle as pkl
 
 
 def vineBeta(dim, betaparam):
+
+    # https://stats.stackexchange.com/questions/2746/how-to-efficiently-generate-random-positive-semidefinite-correlation-matrices
+    
     P = np.zeros([dim, dim])
     S = np.eye(dim)
     for k in range(0, dim - 1):
@@ -185,7 +188,7 @@ if __name__ == '__main__':
     control_vars = [10, 30, 50, 70]
     samples = [500, 1000, 1500, 2000]
     experiments = 100
-    output_file = 'results_single_figure.pkl'
+    output_file = 'output.pkl'
 
     theta_hat, results = run_experiments(
         control_vars, samples, experiments, theta, output_file)
